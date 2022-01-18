@@ -1,0 +1,26 @@
+imp "pkg/system"
+
+:: x2.1 or above only
+
+:main
+    jmp callFor
+    jmp callWhl
+
+:callFor
+    psh 5 forIdx
+    psh "testFor" forSec
+    jmp for
+
+:callWhl
+    psh 0 whlCon
+    psh "testWhl" whlSec
+    psh 0 idx
+    jmp whl
+
+:testFor
+    out "> for loop"
+
+:testWhl
+    add idx 1 idx
+    evl idx == 5 "psh 1 whlCon"
+    out "> whl loop"

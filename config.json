@@ -1,0 +1,4 @@
+{
+    "entrypoint": "main.xt",
+    "operators_file": "internals/operators.py"
+}
