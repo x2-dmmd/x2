@@ -135,7 +135,8 @@ imp "pkg/stdlib/cvrt"
     ret -cost
     
 :_calculateLakes
-    mul lakes lakes -cost
+    mul 100000 lakes -cost
+    mul -cost lakes -cost
     add -cost 100000 -cost
     ret -cost
 
