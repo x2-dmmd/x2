@@ -6,3 +6,4 @@ imp "pkg/stdlib/system"
 :: Entry
 :main
     out "Hello World"
+    
