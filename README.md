@@ -976,7 +976,7 @@ For example:
 -5
 ```
 
-All numbers, including integers, can be increased or decreased using mathimatical [**operators**](#operators):
+All numbers, including integers, can be increased or decreased using mathematical [**operators**](#operators):
 
 ```
 inc 5
@@ -1022,7 +1022,7 @@ For example:
 -5.0
 ```
 
-All numbers, including floating point numbers, can be increased or decreased using mathimatical [**operators**](#operators):
+All numbers, including floating point numbers, can be increased or decreased using mathematical [**operators**](#operators):
 
 ```
 inc 5.0
@@ -1295,7 +1295,7 @@ psh 5 number
 psh 10 number5Times2
 pop "number$(pop number)Times2" output
 out output
-:: 5
+:: 10
 ```
 
 The string template literal within the string grabs the `5` from the variable `number`. It then appends it with the rest of the string. The combined variable name is then popped out and stored in the variable `output`.
@@ -1315,7 +1315,7 @@ imp <path>
 For example:
 
 ```
-imp "pkg/stdlib/system
+imp "pkg/stdlib/system"
 ```
 
 Note that the extensions is unnecessary when importing another file.

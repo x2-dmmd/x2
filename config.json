@@ -1,4 +1,4 @@
 {
     "entrypoint": "main.xt",
-    "operators_file": "internals/operators.py"
+    "operators_file": "x2/operators.py"
 }
