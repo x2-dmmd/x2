@@ -19,7 +19,7 @@ Welcome to the official x2 documentations page!
 
 x2 is a minimalistic and open source programming language created by [**iiPython**](https://github.com/ii-Python/). Its syntaxes and behaviors are heavily inspired by the famous programming languages [**x86 Assembly**](https://en.wikipedia.org/wiki/X86_assembly_language/) and [**Batch**](https://en.wikipedia.org/wiki/Batch_file/). x2 is a [**high-level programming languages**](https://en.wikipedia.org/wiki/High-level_programming_language/) with syntaxes from [**low-level programming languages**](https://en.wikipedia.org/wiki/Low-level_programming_language/), similar to [**x86 Assembly**](https://en.wikipedia.org/wiki/X86_assembly_language/).
 
-## Installation
+## Installations
 
 x2 uses a [**Python**](https://python.org/) interpreter to execute the files. A minimum version of `Python 3.9.1` or higher (`Python 3.10.x` is recommended) is required to run an x2 file. You can download Python [**here**](https://www.python.org/downloads/)!
 
@@ -67,6 +67,6 @@ python main.py main.xt
 ## Footer
 
 Last Updated: `Jan. 22nd, 2022` <br>
-Documentations Updated and Maintained by `Dm123321_31mD`
+Document Written by `Dm123321_31mD`
 
 [**↑ Go To Top**](#x2)
