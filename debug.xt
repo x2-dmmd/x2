@@ -1,0 +1,7 @@
+:: Imports
+imp "pkg/debug" as debug
+imp "pkg/stdlib" as stdlib
+
+:: Main
+:main
+    pvk debug.variables

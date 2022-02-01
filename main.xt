@@ -1,6 +1,36 @@
 :: Imports
-imp "pkg/stdlib/system"
+imp "pkg/array"
+imp "pkg/stdlib"
 
-:: Entry
+:: Main
 :main
-    out "Hello, World!"
+    pvk array.new "list"
+    pvk array.push "list" "arg0"
+    pvk array.push "list" "arg1"
+    pvk array.push "list" "arg2"
+    pvk array.push "list" "arg3"
+    pvk array.push "list" "arg2"
+    pvk array.push "list" "arg3"
+    pvk array.push "list" "arg2"
+    pvk array.push "list" "arg3"
+    pvk array.push "list" "arg4"
+    pvk array.push "list" "arg5"
+    :: pvk array.remove "list" 3
+    pvk array.clone "list" "list2"
+    out (pvk array.toString "list2")
+    out list2.length
+    :: out list[0]
+    :: out list[1]
+    :: out list[2]
+    :: out list[3]
+    :: out list[4]
+    :: out list[5]
+    :: out list.length
+    :: pvk array.slice "list" -1 7 "list2"
+    :: out list2.length
+    :: out list2[0]
+    :: out list2[1]
+    :: out list2[2]
+    :: out list2[3]
+    :: out list2[4]
+    :: out list2[5]
