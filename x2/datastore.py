@@ -10,11 +10,11 @@ from .exceptions import ConstantVariable
 
 # Datastore class
 class XTDatastore(object):
-    def __init__(self, mem: XTMemory, raw: str) -> None:
+    def __init__(self, mem: XTMemory, raw: str, section_override: str = None) -> None:
         self.mem, self.raw, self.flags = mem, raw, []
 
         self.active_file = self.mem.interpreter.linetrk[-1][0]
-        self.active_section = self.mem.interpreter.linetrk[-1][1]
+        self.active_section = section_override or self.mem.interpreter.linetrk[-1][1]
 
         self.keydict = {
             "#": self.mem.vars["globals"],
@@ -80,7 +80,10 @@ class XTDatastore(object):
         self.keydict[self.raw[1:] if self.raw[0] in ["#", "@"] else self.raw] = (self._parse(), True)
 
     def delete(self) -> None:
-        if "var" in self.flags:
+        if "const" in self.flags:
+            raise ConstantVariable("cannot delete a constant variable")
+
+        elif "var" in self.flags:
             del self.keydict[self.raw[1:] if self.raw[0] in ["#", "@"] else self.raw]
 
     def refresh(self) -> None:

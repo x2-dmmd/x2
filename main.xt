@@ -1,6 +1,16 @@
+:: #foldstart
+
 :: Imports
-imp "pkg/stdlib"
+imp "stdlib"
+imp "stdlib/array"
+imp "stdlib/object"
 
 :: Main
 :main
-    out (pvk stdlib.instanceOf nul "nul")
+    call object.new dict
+    out (pvk object.get dict "yo")
+    out (pvk object.set dict "yo" "hi")
+    out (pvk object.get dict "yo")
+    out (pvk object.delete dict "yo")
+    out (pvk object.get dict "yo")
+    out dict
