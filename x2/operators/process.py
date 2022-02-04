@@ -2,7 +2,6 @@
 
 # Modules
 import os
-from typing import Any
 from time import sleep
 
 # Exceptions
@@ -35,23 +34,21 @@ class XTOperators:
 
         os._exit(code)
 
-    def evl(ctx) -> Any:
+    def evl(ctx) -> None:
         """
         Evaluates Python code from the x2 process
 
-        evl <code> [out]
+        evl <code>
         code - str
-        out - variable
         """
         if not ctx.args:
             raise MissingArguments("required: code")
 
-        result = eval(compile(ctx.args[0].value, "<x2evl>", mode = "single"), {}, {"_x2": ctx.memory.interpreter})
-        output = ctx.args[1] if len(ctx.args) > 1 else None
-        if output:
-            output.set(result)
-
-        return result
+        _x2 = ctx.memory.interpreter
+        eval(compile(ctx.args[0].value, "<x2evl>", mode = "exec"), {}, {
+            "x2": _x2, "setvar": _x2.setvar, "getvar": _x2.getvar,
+            "config": _x2._config, "version": _x2._version
+        })
 
     def read(ctx) -> str:
         """
@@ -68,6 +65,15 @@ class XTOperators:
             output.set(value)
 
         return value
+
+    def thrw(ctx) -> None:
+        """
+        Throws an exception with the given message
+
+        thrw <message>
+        message - str
+        """
+        raise Exception(str(ctx.args[0].value))
 
     def wait(ctx) -> None:
         """
@@ -88,6 +94,6 @@ class XTOperators:
 # Operator map
 opmap = {
     "cls": XTOperators.cls, "ext": XTOperators.ext,
-    "evl": XTOperators.evl,
-    "read": XTOperators.read, "wait": XTOperators.wait
+    "evl": XTOperators.evl, "read": XTOperators.read,
+    "thrw": XTOperators.thrw, "wait": XTOperators.wait
 }

@@ -1,5 +1,0 @@
-
-:delete _internal_delete_name _internal_delete_key
-    pvk value "$(pop _internal_delete_name).type" "_internal_delete_type"
-    cmp _internal_delete_type == "array" "pvk _arrayFlush _internal_delete_name _internal_delete_key"
-    cmp _internal_delete_type == "dictionary" "pvk _dictionaryFlush _internal_delete_name _internal_delete_key"

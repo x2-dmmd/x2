@@ -1,4 +1,0 @@
-imp "pkg/stdlib" as honk
-
-:main
-    out (pvk stdlib.version)

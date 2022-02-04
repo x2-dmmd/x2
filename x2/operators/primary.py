@@ -1,6 +1,7 @@
 # Copyright 2022 iiPython
 
 # Modules
+from copy import copy
 from typing import Any
 
 # Exceptions
@@ -17,7 +18,7 @@ def _section_call(memory, section: str, args: list, output = None) -> Any:
         raise MissingArguments(f"section '{section}' takes {', '.join(sectionargs)}")
 
     for i, arg in enumerate(sectionargs):
-        memory.vars[arg] = args[i].value
+        memory.interpreter.setvar(arg, args[i].value)
 
     retvalue = memory.interpreter.run_section(section)
     if output is not None:
@@ -37,7 +38,9 @@ class XTOperators:
         """
         if len(ctx.args) < 2:
             raise MissingArguments("required: val + output")
-        ctx.args[1].set(ctx.args[0].value)
+
+        var = ctx.args[1]
+        ctx.memory.interpreter.setvar(var.raw if "var" in var.flags else var.value, ctx.args[0].value)
 
     def out(ctx) -> None:
         """
@@ -66,7 +69,7 @@ class XTOperators:
 
         val = ctx.args[0]
         if "var" not in val.flags:
-            val.value = ctx.memory.vars.get(val.value, None)
+            val.set(ctx.memory.interpreter.getvar(val.raw).value or None)
             if val.value is None:
                 raise InvalidArgument("invalid or unknown variable")
 
@@ -86,8 +89,7 @@ class XTOperators:
         if not ctx.args:
             raise MissingArguments("required: section")
 
-        section = ctx.args[0].value or ctx.args[0].raw
-        ctx.memory.interpreter.run_section(section)
+        ctx.memory.interpreter.run_section(ctx.args[0].value or ctx.args[0].raw)
 
     def imp(ctx) -> None:
         """
@@ -103,21 +105,31 @@ class XTOperators:
             raise InvalidArgument("path must be a string")
 
         path = ctx.args[0].value.replace("\\", "/")
-        if not path.endswith(".xt"):
-            path += ".xt"
+        original_path = copy(path)
+        if not path[-3:] == ".xt":
+            namespace = copy(path).split("/")[-1]
+            path = f"pkg/{path}/main.xt"
 
-        namespace = path.split("/")[-1]
-        if len(ctx.args) == 3:
+        else:
+            namespace = path.split("/")[-1]
+
+        if len(ctx.args) >= 2:
             action = ctx.args[1].raw
             if action == "as":
                 namespace = ctx.args[2].value
+
+            elif action == "relative":
+                if not original_path[-3:] == ".xt":
+                    original_path += ".xt"
+
+                path = f"pkg/{original_path}"
 
         with open(path, "r", encoding = "utf-8") as f:
             code = f.read()
 
         ctx.memory.interpreter.load_sections(
             code,
-            path.split("/")[-1],
+            path.replace("\\", "/").split("/")[-1],
             namespace = namespace,
             external = True
         )
@@ -132,13 +144,7 @@ class XTOperators:
         if not ctx.args:
             raise MissingArguments("required: val")
 
-        var = ctx.args[0]
-        if "var" not in var.flags:
-            if var.value in ctx.memory.vars:
-                del ctx.memory.vars[var.value]
-                return
-
-        del ctx.memory.vars[var.raw]
+        ctx.args[0].delete()
 
     def rep(ctx) -> None:
         """
@@ -222,6 +228,35 @@ class XTOperators:
         """
         ctx.memory.interpreter.linetrk[-1][3] = True
 
+    def try_(ctx) -> None:
+        """
+        Tries to execute the provided branch, if execution fails it will run the second branch (if provided)
+
+        try <branch> [failure]
+        branch - str
+        failure - str
+        """
+        if not ctx.args:
+            raise MissingArguments("required: branch")
+
+        try:
+            ctx.memory.interpreter.execute(ctx.args[0].value, raise_error = True)
+
+        except Exception:
+            if len(ctx.args) > 1:
+                ctx.memory.interpreter.execute(ctx.args[1].value)
+
+    def cnst(ctx) -> None:
+        """
+        Creates a constant variable with the given value
+
+        cnst <val> <out>
+        val - any
+        out - variable
+        """
+        XTOperators.psh(ctx)
+        ctx.args[1].setconst()
+
 # Operator map
 opmap = {
     "psh": XTOperators.psh, "pop": XTOperators.pop,
@@ -229,5 +264,6 @@ opmap = {
     "imp": XTOperators.imp, "rem": XTOperators.rem,
     "rep": XTOperators.rep, "ret": XTOperators.ret,
     "pvk": XTOperators.pvk, "skp": XTOperators.skp,
-    "end": XTOperators.end, "call": XTOperators.call
+    "end": XTOperators.end, "try": XTOperators.try_,
+    "cnst": XTOperators.cnst, "call": XTOperators.call
 }

@@ -1,0 +1,6 @@
+:: TODO: Create "/native/" folder for Python injections.
+:: TODO: Update x2 Theme for new operators.
+:: TODO: Multiline-eval operator.
+:: IDEA: instanceOf and typeOf functions.
+:: IDEA: Colored comments - `+` (green) `-` (red) `@` (yellow) `#` (purple)
+:: WARNING: Using Modified x2.2b4 - Merge main branch on completion.
