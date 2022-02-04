@@ -1,0 +1,32 @@
+:: @ Standard Library Object Extension v1.0.0 (x2.3b0 - x2.3b0) DmmD
+
+:: ! Imports
+imp "stdlib"
+
+:: ! Methods
+:delete object key
+    cmp (pvk stdlib.class object) != #object "thrw \"Package <stdlib/object> - Internal Runtime Error: First argument is not an array\""
+    cmp (pvk has object key) == #false "ret #null"
+    call get object key result
+    evl "del getvar('object').value[getvar('key').value]"
+    ret result
+    
+:get object key
+    cmp (pvk stdlib.class object) != #object "thrw \"Package <stdlib/object> - Internal Runtime Error: First argument is not an array\""
+    cmp (pvk has object key) == #false "ret #null"
+    evl "setvar('result', getvar('object').value[getvar('key').value])"
+    ret result
+
+:has object key
+    cmp (pvk stdlib.class object) != #object "thrw \"Package <stdlib/object> - Internal Runtime Error: First argument is not an array\""
+    evl "setvar('result', getvar('key').value in getvar('object').value)"
+    ret result
+
+:new
+    evl "setvar('result', {})"
+    ret result
+
+:set object key value
+    cmp (pvk stdlib.class object) != #object "thrw \"Package <stdlib/object> - Internal Runtime Error: First argument is not an array\""
+    evl "getvar('object').value[getvar('key').value] = getvar('value').value"
+    ret value
