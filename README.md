@@ -8,7 +8,7 @@ Welcome to the official documentation of x2! This documentation will get you sta
 
 - **Home ▾**
     - [About](#about)
-    - [Getting Started](#getting-started)
+    - [Getting Started ▾](#getting-started)
         - [Installation](#step-1-installation)
         - [Set-Up](#step-2-set-up)
         - [Execution](#step-3-execution)
@@ -19,13 +19,13 @@ Welcome to the official documentation of x2! This documentation will get you sta
 
 ## About
 
-x2 (Pronounced "ex-two") is a high-level, interpreted language written in Python by [iiPython](https://github.com/ii-Python/) with low-level programming language syntax, such as [x86 Assembly](https://en.wikipedia.org/wiki/X86_assembly_language/) or [Batch](https://en.wikipedia.org/wiki/Batch_file/).
+x2 (Pronounced "ex-two") is a high-level, interpreted language written in Python by [iiPython](https://github.com/ii-Python/) with low-level programming language syntax, such as [x86 Assembly](https://en.wikipedia.org/wiki/X86_assembly_language) or [Batch](https://en.wikipedia.org/wiki/Batch_file).
 
 x2 contains features such as:
 - Automatic Garbage Collection
 - Scoped/Global Variables
 - Public/Private Sections
-- Function and Methods
+- Functions and Methods
 - Python Integration
 - Working Import/Export System
 - Package System
@@ -49,11 +49,11 @@ Next, visit our [github repository](https://github.com/ii-Python/x2/) and downlo
 git clone https://github.com/ii-Python/x2/
 ```
 
-If you are choosing Visual Studio Code as your Integrated Development Environment, you can also install the [x2 extension](https://marketplace.visualstudio.com/items?itemName=iiPython.x2/) on the marketplace to get syntax highlighting on your x2 files.
+If you are choosing Visual Studio Code as your Integrated Development Environment, you can also install the [x2 extension](https://marketplace.visualstudio.com/items?itemName=iiPython.x2) on the marketplace to get syntax highlighting on your x2 files.
 
 ### Step 2: Set-Up
 
-Once you open up your x2 project, you should be able to find a file named `main.xt`. By default, this is your main entry-file and is where you will be writing your x2 code. Within the file, you should see:
+Once you open up your x2 project, you should be able to find a file named `main.xt`. By default, this is your main entry file and is where you will be writing your x2 code. Within the file, you should see:
 
 ```xt
 :: Main
@@ -61,9 +61,9 @@ Once you open up your x2 project, you should be able to find a file named `main.
     out "Hello, world!"
 ```
 
-Any x2 files should always end in the `.xt` extension. The main entry-file should also always contain a `:main` section.
+Any x2 files should always end in the `.xt` extension. The main entry file should also always contain a `:main` section.
 
-You can edit the main entry-file by editing the configuration in `.xtconfig`. It is a JSON-like file that contains all the configurations for your x2 project. Within it, you should see:
+You can edit the main entry file by editing the configuration in `.xtconfig`. It is a JSON-like file that contains all the configurations for your x2 project. Within it, you should see:
 
 ```xtconfig
 {
@@ -111,11 +111,11 @@ You can publish your games and packages at [our website](https://x2.iipython.cf/
 ### Resouces
 
 - [Github Repository](https://github.com/ii-Python/x2)
-- [Visual Studio Code x2 Extension](https://marketplace.visualstudio.com/items?itemName=iiPython.x2/)
+- [Visual Studio Code x2 Extension](https://marketplace.visualstudio.com/items?itemName=iiPython.x2)
 - [Website](https://x2.iipython.cf/)
 
 ---
 
-Last Updated: February 4th, 2022 by Dm123321_31mD
+Last Updated: February 5th, 2022 by Dm123321_31mD
 
 [↑ Go To Top](#x2)

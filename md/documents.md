@@ -6,7 +6,8 @@
 - [Tutorials](./tutorials.md)
 -  **Documents ▾**
     - [About](#about)
-    - [Sections](#about)
+    - [Catalog ▾](#catalog)
+        - [Comments](./documents/comments.md)
         - [Comparators](./documents/comparators.md)
         - [Configurations](./documents/configurations.md)
         - [Data Types](./documents/dataTypes.md)
@@ -22,8 +23,9 @@ Welcome to the documents page of the official x2 documentation. In this section,
 
 If you are looking for a beginner's guide for x2, check out the [tutorials](./tutorials.md) instead.
 
-## Sections
+## Catalog
 
+- ### [Comments](./documents/comments.md)
 - ### [Comparators](./documents/comparators.md)
 - ### [Configurations](./documents/configurations.md)
 - ### [Data Types](./documents/dataTypes.md)
@@ -35,6 +37,6 @@ If you are looking for a beginner's guide for x2, check out the [tutorials](./tu
 
 ---
 
-Last Updated: February 4th, 2022 by Dm123321_31mD
+Last Updated: February 5th, 2022 by Dm123321_31mD
 
 [↑ Go To Top](#x2--documents)

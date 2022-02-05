@@ -111,6 +111,10 @@ imp "stdlib"
     evl "getvar('array').value[getvar('index').value] = getvar('value').value"
     ret value
 
+:shuffle array
+    cmp (pvk stdlib.class array) != #array "thrw \"Package <stdlib/array> - Internal Runtime Error: First argument is not an array\""
+    evl "import random; random.shuffle(getvar('array').value)"
+
 :sort array
     cmp (pvk stdlib.class array) != #array "thrw \"Package <stdlib/array> - Internal Runtime Error: First argument is not an array\""
     evl "getvar('array').value.sort()"
