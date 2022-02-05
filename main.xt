@@ -3,14 +3,9 @@
 :: Imports
 imp "stdlib"
 imp "stdlib/array"
+imp "stdlib/color"
 imp "stdlib/object"
 
 :: Main
 :main
-    call object.new dict
-    out (pvk object.get dict "yo")
-    out (pvk object.set dict "yo" "hi")
-    out (pvk object.get dict "yo")
-    out (pvk object.delete dict "yo")
-    out (pvk object.get dict "yo")
-    out dict
+    out (pvk color.bitf "yo" 76)

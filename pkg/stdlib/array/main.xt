@@ -1,4 +1,6 @@
-:: @ Standard Library Array Extension v1.0.0 (x2.3b0 - x2.3b0) DmmD
+:: @ Standard Library Array Extension
+:: @ v1.0.0 (x2.3b0 - x2.3b0)
+:: @ DmmD
 
 :: ! Imports
 imp "stdlib"
@@ -17,6 +19,10 @@ imp "stdlib"
 :count array value
     cmp (pvk stdlib.class array) != #array "thrw \"Package <stdlib/array> - Internal Runtime Error: First argument is not an array\""
     evl "setvar('result', getvar('array').value.count(getvar('value').value))"
+    ret result
+
+:from value
+    evl "setvar('result', list(getvar('value').value))"
     ret result
 
 :get array index
@@ -109,6 +115,11 @@ imp "stdlib"
     cmp (pvk stdlib.class array) != #array "thrw \"Package <stdlib/array> - Internal Runtime Error: First argument is not an array\""
     evl "getvar('array').value.sort()"
     ret array
+
+:toString array
+    cmp (pvk stdlib.class array) != #array "thrw \"Package <stdlib/array> - Internal Runtime Error: First argument is not an array\""
+    evl "setvar('result', str(getvar('array').value))"
+    ret result
 
 :unique array
     cmp (pvk stdlib.class array) != #array "thrw \"Package <stdlib/array> - Internal Runtime Error: First argument is not an array\""

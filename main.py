@@ -6,6 +6,7 @@ import os
 import sys
 import json
 import string
+import time
 from typing import Any, Tuple
 
 from x2 import (
@@ -15,7 +16,7 @@ from x2 import (
 )
 
 # Initialization
-__version__ = "x2.3b0"
+__version__ = "x2.3b0 (Modified)"
 
 sys.argv = sys.argv[1:]
 xt_folder = os.path.join(os.path.dirname(__file__), "x2")
@@ -47,6 +48,7 @@ class XTInterpreter(object):
         # Data attributes
         self._config = config
         self._version = __version__
+        self._uptime_st = time.time()
 
     def setvar(self, name: str, value: Any, **kwargs) -> Any:
         return XTDatastore(self.memory, name, **kwargs).set(value)
@@ -73,7 +75,7 @@ class XTInterpreter(object):
             return self._opmap[operator](XTContext(self.memory, tokens[1:]))
 
         except Exception as e:
-            if raise_error or True:
+            if raise_error:
                 raise e
 
             elif config.get("quiet", False):
