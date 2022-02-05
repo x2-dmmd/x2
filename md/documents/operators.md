@@ -4,7 +4,7 @@
 
 - [Home](../../README.md)
 - [Tutorials](../tutorials.md)
--  [Documents ▾](../documents.md)
+- [Documents ▾](../documents.md)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
@@ -12,13 +12,14 @@
         - [Configurations](./configurations.md)
         - [Data Types](./dataTypes.md)
         - **Operators ▾**
+            - [Catalog](#catalog)
             - [About](#about)
             - [Documentation](#documentation)
-        - [Configurations](./configurations.md)
         - [Packages](./packages.md)
         - [Python API](./pythonAPI.md)
         - [Sections](./sections.md)
         - [Variables](./variables.md)
+- [Standard Library](../standardLibrary.md)
 
 ## Catalog
 

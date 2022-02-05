@@ -4,7 +4,7 @@
 
 - [Home](../../README.md)
 - [Tutorials](../tutorials.md)
--  [Documents ▾](../documents.md)
+- [Documents ▾](../documents.md)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
@@ -19,9 +19,12 @@
         - [Python API](./pythonAPI.md)
         - [Sections](./sections.md)
         - [Variables](./variables.md)
+- [Standard Library](../standardLibrary.md)
 
 ## Catalog
 
+### B
+- [Boolean](#boolean)
 ### F
 - [Float](#float)
 
@@ -36,7 +39,7 @@
 
 ## About
 
-Data types are classifications of variables or values. In vanilla x2, there are currently five valid unique data types. Each data type can only store a specific type of value. For example, a string cannot contain an integer value, or a boolean cannot contain a string value.
+Data types are classifications of variables or values. Each data type can only store a specific type of value. For example, a string cannot contain an integer value, or a boolean cannot contain a string value.
 
 Because x2 is a dynamic programming language, you can change the data type of a variable or a value during run-time.
 
@@ -61,6 +64,12 @@ psh 5 myInteger
 ```
 
 ## Documentation
+
+### Boolean
+
+A boolean value represents either `true` or `false`.
+
+Currently, it is impossible to get a boolean value within vanilla x2. Because of that, integers are used instead to represent a true or false value, where `1` represents `true` and `0` represents `false`.
 
 ### Float
 
@@ -110,7 +119,7 @@ psh 05 myInteger
 out myInteger
 ```
 
-In vanilla x2, it can also be used as a boolean value:
+In vanilla x2, it can also be used as a boolean value, where `1` represents `true` and `0` represents `false`:
 
 ```xt
 psh 0 hamburgerIsEaten
@@ -183,6 +192,7 @@ Below is a list of all the escape codes for reference:
 | `\N{name}` | [Unicode Name](https://unicode.org/) | `out "Hello,\N{grinning face}"` | `Hello,😀world!` | ✓ |
 | `\uhhhh` | [16-Bit Unicode Escape](https://home.unicode.org/) | `out "\u0048\u0065\u006c\u006c\u006f\u002c\u0020\u0077\u006f\u0072\u006c\u0064\u0021"` | `Hello, world!` | ✓ |
 | `\Uhhhhhhhh` | [32-Bit Unicode Escape](https://unicode.org/) | `out "Hello,\U0001F600world!"` | `Hello,😀world!` | ✓ |
+| `\033[` | [ANSI Escape](https://en.wikipedia.org/wiki/ANSI_escape_code) | `out "\033[31mHello, world!\033[0m"` | `Hello, world!` in red | ✓ |
 
 > Source: [Python DS - Python 3 Escape Sequences](https://www.python-ds.com/python-3-escape-sequences)
 
