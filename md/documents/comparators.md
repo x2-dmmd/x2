@@ -6,9 +6,10 @@
 - [Tutorials](../tutorials.md)
 -  [Documents ▾](../documents.md)
     - [About](../documents.md#about)
-    - [Catalog ▾](../documents.md#catalog)
+    - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
         - **Comparators ▾**
+            - [Catalog](#catalog)
             - [About](#about)
             - [Documentation](#documentation)
         - [Configurations](./configurations.md)
@@ -18,6 +19,31 @@
         - [Python API](./pythonAPI.md)
         - [Sections](./sections.md)
         - [Variables](./variables.md)
+
+
+## Catalog
+
+### E
+- [Equal To](#equal-to)
+
+### F
+- [From](#from)
+
+### G
+- [Greater Than](#greater-than)
+- [Greater Than or Equal To](#greater-than-or-equal-to)
+
+### I
+- [In](#in)
+- [Is](#is)
+
+### L
+- [Less Than](#less-than)
+- [Less Than or Equal To](#less-than-or-equal-to)
+
+### N
+- [Not Equal To](#not-equal-to)
+- [Not In](#not-in)
 
 ## About
 
@@ -107,8 +133,8 @@ Checks if the source is less than the target.
 
 | Parameter | Type | Description |
 | :-: | :-: | :-: |
-| Source | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
-| Target | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value being compared to |
+| Source | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
+| Target | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value being compared to |
 
 Example:
 
@@ -128,8 +154,8 @@ Checks if the source is less than or equal to the target.
 
 | Parameter | Type | Description |
 | :-: | :-: | :-: |
-| Source | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
-| Target | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value being compared to |
+| Source | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
+| Target | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value being compared to |
 
 Example:
 
@@ -149,8 +175,8 @@ Checks if the source is greater than the target.
 
 | Parameter | Type | Description |
 | :-: | :-: | :-: |
-| Source | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
-| Target | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value being compared to |
+| Source | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
+| Target | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value being compared to |
 
 Example:
 
@@ -170,8 +196,8 @@ Checks if the source is greater than or equal to the target.
 
 | Parameter | Type | Description |
 | :-: | :-: | :-: |
-| Source | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
-| Target | [Integer](./dataTypes.md#integer) or [Float](./dataTypes.md#float) or [String](./dataTypes.md#string) | The variable or value being compared to |
+| Source | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value that is being compared against |
+| Target | [Float](./dataTypes.md#float) or [Integer](./dataTypes.md#integer) or [String](./dataTypes.md#string) | The variable or value being compared to |
 
 Example:
 

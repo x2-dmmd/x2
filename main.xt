@@ -1,3 +1,11 @@
 :: Main
 :main
     evl "print(sorted(x2._opmap.keys()))"
+    evl "print(len(x2._opmap))"
+    
+    psh 0 @myInteger
+    whl @myInteger < 5 "jmp mySection"
+
+:mySection
+    out @myInteger
+    inc @myInteger

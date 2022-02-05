@@ -6,11 +6,12 @@
 - [Tutorials](../tutorials.md)
 -  [Documents ▾](../documents.md)
     - [About](../documents.md#about)
-    - [Catalog ▾](../documents.md#catalog)
+    - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
         - [Comparators](./comparators.md)
         - [Configurations](./configurations.md)
         - **Data Types ▾**
+            - [Catalog](#catalog)
             - [About](#about)
             - [Documentation](#documentation)
         - [Operators](./operators.md)
@@ -18,6 +19,20 @@
         - [Python API](./pythonAPI.md)
         - [Sections](./sections.md)
         - [Variables](./variables.md)
+
+## Catalog
+
+### F
+- [Float](#float)
+
+### I
+- [Integer](#integer)
+
+### N
+- [Null](#null)
+
+### S
+- [String](#string)
 
 ## About
 

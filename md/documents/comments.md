@@ -6,7 +6,7 @@
 - [Tutorials](../tutorials.md)
 -  [Documents ▾](../documents.md)
     - [About](../documents.md#about)
-    - [Catalog ▾](../documents.md#catalog)
+    - [Documents ▾](../documents.md#documents)
         - **Comments ▾**
             - [About](#about)
         - [Comparators](./comparators.md)

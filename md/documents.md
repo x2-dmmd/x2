@@ -6,7 +6,7 @@
 - [Tutorials](./tutorials.md)
 -  **Documents ▾**
     - [About](#about)
-    - [Catalog ▾](#catalog)
+    - [Documents ▾](#documents)
         - [Comments](./documents/comments.md)
         - [Comparators](./documents/comparators.md)
         - [Configurations](./documents/configurations.md)
@@ -23,8 +23,7 @@ Welcome to the documents page of the official x2 documentation. In this section,
 
 If you are looking for a beginner's guide for x2, check out the [tutorials](./tutorials.md) instead.
 
-## Catalog
-
+## Documents
 - ### [Comments](./documents/comments.md)
 - ### [Comparators](./documents/comparators.md)
 - ### [Configurations](./documents/configurations.md)
