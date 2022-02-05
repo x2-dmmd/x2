@@ -2,71 +2,120 @@
 
 ## Welcome
 
-Welcome to the official x2 documentations page!
+Welcome to the official documentation of x2! This documentation will get you started in the development of your first x2 project or will help you learn more about x2 in general with in-depth explanations and tutorials.
 
 ## Table of Contents
-- [**About**](#about)
-- [**Installations**](#installations)
-- [**Basics**](#basics)
-- [**Tutorials**](docs/tutorials/tutorials.md#tutorials)
-- [**Documentations**](docs/ducmentations/ducmentations.md#x2-documentations)
-- [**In-Depth Explanations**](docs/indepth/indepth.md#in-depth-explanations)
-- [**Stdlibs**](docs/stdlibs/stdlibs.md#standard-libraries)
-- [**Changelog**](docs/changelogs/x2.2.md#changelogs)
-- [**Credits**](#credits)
+
+- **Home ▾**
+    - [About](#about)
+    - [Getting Started](#getting-started)
+        - [Installation](#step-1-installation)
+        - [Set-Up](#step-2-set-up)
+        - [Execution](#step-3-execution)
+    - [Frequently Asked Questions](#frequently-asked-questions)
+    - [Credits and Links](#credits--links)
+- [Tutorials](./md/tutorials.md)
+- [Documents](./md/documents.md)
 
 ## About
 
-x2 is a minimalistic and open source programming language created by [**iiPython**](https://github.com/ii-Python/). Its syntaxes and behaviors are heavily inspired by the famous programming languages [**x86 Assembly**](https://en.wikipedia.org/wiki/X86_assembly_language/) and [**Batch**](https://en.wikipedia.org/wiki/Batch_file/). x2 is a [**high-level programming languages**](https://en.wikipedia.org/wiki/High-level_programming_language/) with syntaxes from [**low-level programming languages**](https://en.wikipedia.org/wiki/Low-level_programming_language/), similar to [**x86 Assembly**](https://en.wikipedia.org/wiki/X86_assembly_language/).
+x2 (Pronounced "ex-two") is a high-level, interpreted language written in Python by [iiPython](https://github.com/ii-Python/) with low-level programming language syntax, such as [x86 Assembly](https://en.wikipedia.org/wiki/X86_assembly_language/) or [Batch](https://en.wikipedia.org/wiki/Batch_file/).
 
-## Installations
+x2 contains features such as:
+- Automatic Garbage Collection
+- Scoped/Global Variables
+- Public/Private Sections
+- Function and Methods
+- Python Integration
+- Working Import/Export System
+- Package System
+- ...And more!
 
-x2 uses a [**Python**](https://python.org/) interpreter to execute the files. A minimum version of `Python 3.9.1` or higher (`Python 3.10.x` is recommended) is required to run an x2 file. You can download Python [**here**](https://www.python.org/downloads/)!
+## Getting Started
 
-You can also check your current version of Python by typing the following into a terminal:
+### Step 1: Installation
+
+First and foremost, make sure you have [Python](https://python.org/downloads/) (Minimum Python 3.10 | Recommended Python 3.11) installed on your device. You can check if you have Python installed by opening up a terminal and typing:
 
 ```
 python -V
 ```
 
-Next, clone the [**x2 repository**](https://github.com/ii-Python/x2/) either by clicking green `Code ▾` button and then `Download ZIP` or by typing the following into a terminal if you have [**git**](https://git-scm.com/):
+It is extremely recommended to have a text editor or Integrated Development Environment, such as [Visual Studio Code](https://code.visualstudio.com/), as its built-in development tools and add-ons will speed up and facilitate your development process. However, a simple text editor like notepad is sufficient.
+
+Next, visit our [github repository](https://github.com/ii-Python/x2/) and download a clone of the repository by clicking on the green `Code ▾` button and the `Download ZIP` option. Optionally, if you have [git](https://git-scm.com/) installed on your device, you can also clone the repository by opening up a terminal and typing:
 
 ```
 git clone https://github.com/ii-Python/x2/
 ```
 
-## Basics
+If you are choosing Visual Studio Code as your Integrated Development Environment, you can also install the [x2 extension](https://marketplace.visualstudio.com/items?itemName=iiPython.x2/) on the marketplace to get syntax highlighting on your x2 files.
 
-An x2 file can have any name and should end in the extension name `.xt`. By default, the entry point of an x2 project should be named `main.xt`. However, that can be changed within the `config.json` file.
+### Step 2: Set-Up
 
-Below is an example of a `Hello, World!` written in x2:
+Once you open up your x2 project, you should be able to find a file named `main.xt`. By default, this is your main entry-file and is where you will be writing your x2 code. Within the file, you should see:
 
 ```xt
+:: Main
 :main
-    out "Hello, World!"
+    out "Hello, world!"
 ```
 
-To execute an x2 file, simply run the `main.py` file by typing the following into a terminal:
+Any x2 files should always end in the `.xt` extension. The main entry-file should also always contain a `:main` section.
+
+You can edit the main entry-file by editing the configuration in `.xtconfig`. It is a JSON-like file that contains all the configurations for your x2 project. Within it, you should see:
+
+```xtconfig
+{
+    "main": "main.xt"
+}
+```
+
+> You can learn more about setting up your project in the [tutorials](./md/tutorials.md).
+
+### Step 3: Execution
+
+After you are done writing your x2 code, you can execute your x2 project immediately by opening up a terminal and typing:
 
 ```
-python main.py main.xt
+python main.py .
 ```
 
-## Credits
+Currently, you should see the terminal output:
+
+```
+"Hello, World!"
+```
+
+## Frequently Asked Questions
+
+### Q: Why is it called x2?
+
+It originally started as `x` because the name sounded cool. As development goes on, a second revision was published and the name was changed to `x2`.
+
+### Q: Can I use x2 for data management, game design, or simply for fun?
+
+You can pretty much do anything in vanilla x2, especially with the `evl` operator, which allows you to integrate Python into your project.
+
+### Q: Where can I publish my games / packages?
+
+You can publish your games and packages at [our website](https://x2.iipython.cf/)!
+
+## Credits & Links
 
 ### Contributors
-- [**iiPython**](https://github.com/ii-Python/)
-- [**Dm123321_31mD**](https://github.com/Dm12332131mD/)
 
-### Links
-- [**Syntax Highlighter Repository**](https://github.com/Dm12332131mD/x2-theme/)
-- [**Syntax Highlighter Extension**](https://marketplace.visualstudio.com/items?itemName=iiPython.x2)
-- [**x2 Repository**](https://github.com/ii-Python/x2/)
-- [**Website**](https://local.iipython.cf/)
+- [iiPython](https://github.com/ii-Python/) - Lead Developer
+- [Dm123321_31mD](https://github.com/Dm12332131mD) - Contributor
 
-## Footer
+### Resouces
 
-Last Updated: `Jan. 22nd, 2022` <br>
-Document Written by `Dm123321_31mD`
+- [Github Repository](https://github.com/ii-Python/x2)
+- [Visual Studio Code x2 Extension](https://marketplace.visualstudio.com/items?itemName=iiPython.x2/)
+- [Website](https://x2.iipython.cf/)
 
-[**↑ Go To Top**](#x2)
+---
+
+Last Updated: February 4th, 2022 by Dm123321_31mD
+
+[↑ Go To Top](#x2)

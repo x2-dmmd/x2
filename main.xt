@@ -1,11 +1,3 @@
-:: #foldstart
-
-:: Imports
-imp "stdlib"
-imp "stdlib/array"
-imp "stdlib/color"
-imp "stdlib/object"
-
 :: Main
 :main
-    out (pvk color.bitf "yo" 76)
+    out "Hello, world!"
