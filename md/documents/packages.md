@@ -5,6 +5,7 @@
 - [Home](../../README.md)
 - [Tutorials](../tutorials.md)
 - [Documents ▾](../documents.md)
+    - [Table of Contents](../documents.md#table-of-contents)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
@@ -13,11 +14,13 @@
         - [Data Types](./dataTypes.md)
         - [Operators](./operators.md)
         - **Packages ▾**
+            - [Table of Contents](#table-of-contents)
             - [About](#about)
         - [Sections](./sections.md)
         - [Variables](./variables.md)
 - [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
+- [Full Table of Contents](../fullTableOfContents.md)
 
 ## About
 

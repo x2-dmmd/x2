@@ -4,7 +4,8 @@
 
 - [Home](../README.md)
 - [Tutorials](./tutorials.md)
--  **Documents ▾**
+- **Documents ▾**
+    - [Table of Contents](#table-of-contents)
     - [About](#about)
     - [Documents ▾](#documents)
         - [Comments](./documents/comments.md)
@@ -15,8 +16,9 @@
         - [Packages](./documents/packages.md)
         - [Sections](./documents/sections.md)
         - [Variables](./documents/variables.md)
-- [Python API](../standardLibrary.md)
-- [Standard Library](../pythonAPI.md)
+- [Python API](./standardLibrary.md)
+- [Standard Library](./pythonAPI.md)
+- [Full Table of Contents](./fullTableOfContents.md)
 
 ## About
 
@@ -25,6 +27,7 @@ Welcome to the documents page of the official x2 documentation. In this section,
 If you are looking for a beginner's guide for x2, check out the [tutorials](./tutorials.md) instead.
 
 ## Documents
+
 - ### [Comments](./documents/comments.md)
 - ### [Comparators](./documents/comparators.md)
 - ### [Configurations](./documents/configurations.md)

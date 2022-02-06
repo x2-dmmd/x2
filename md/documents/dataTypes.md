@@ -5,12 +5,14 @@
 - [Home](../../README.md)
 - [Tutorials](../tutorials.md)
 - [Documents ▾](../documents.md)
+    - [Table of Contents](../documents.md#table-of-contents)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
         - [Comparators](./comparators.md)
         - [Configurations](./configurations.md)
         - **Data Types ▾**
+            - [Table of Contents](#table-of-contents)
             - [Catalog](#catalog)
             - [About](#about)
             - [Documentation](#documentation)
@@ -21,21 +23,28 @@
         - [Variables](./variables.md)
 - [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
+- [Full Table of Contents](../fullTableOfContents.md)
 
 ## Catalog
 
 ### B
+
 - [Boolean](#boolean)
+
 ### F
+
 - [Float](#float)
 
 ### I
+
 - [Integer](#integer)
 
 ### N
+
 - [Null](#null)
 
 ### S
+
 - [String](#string)
 
 ## About

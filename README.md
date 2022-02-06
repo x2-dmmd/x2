@@ -7,17 +7,22 @@ Welcome to the official documentation of x2! This documentation will get you sta
 ## Table of Contents
 
 - **Home ▾**
+    - [Welcome](#welcome)
+    - [Table of Contents](#table-of-contents)
     - [About](#about)
     - [Getting Started ▾](#getting-started)
-        - [Installation](#step-1-installation)
-        - [Set-Up](#step-2-set-up)
-        - [Execution](#step-3-execution)
+        - [Step 1: Installation](#step-1-installation)
+        - [Step 2: Set-Up](#step-2-set-up)
+        - [Step 3: Execution](#step-3-execution)
     - [Frequently Asked Questions](#frequently-asked-questions)
-    - [Credits and Links](#credits--links)
+    - [Credits and Links ▾](#credits--links)
+        - [Contributors](#contributors)
+        - [Resources](#resources)
 - [Tutorials](./md/tutorials.md)
 - [Documents](./md/documents.md)
 - [Python API](./md/pythonAPI.md)
 - [Standard Library](./md/standardLibrary.md)
+- [Full Table of Contents](./md/fullTableOfContents.md)
 
 ## About
 

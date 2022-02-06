@@ -5,10 +5,12 @@
 - [Home](../../README.md)
 - [Tutorials](../tutorials.md)
 - [Documents ▾](../documents.md)
+    - [Table of Contents](../documents.md#table-of-contents)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
         - **Comparators ▾**
+            - [Table of Contents](#table-of-contents)
             - [Catalog](#catalog)
             - [About](#about)
             - [Documentation](#documentation)
@@ -20,28 +22,35 @@
         - [Variables](./variables.md)
 - [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
+- [Full Table of Contents](../fullTableOfContents.md)
 
 ## Catalog
 
 ### E
+
 - [Equal To](#equal-to)
 
 ### F
+
 - [From](#from)
 
 ### G
+
 - [Greater Than](#greater-than)
 - [Greater Than or Equal To](#greater-than-or-equal-to)
 
 ### I
+
 - [In](#in)
 - [Is](#is)
 
 ### L
+
 - [Less Than](#less-than)
 - [Less Than or Equal To](#less-than-or-equal-to)
 
 ### N
+
 - [Not Equal To](#not-equal-to)
 - [Not In](#not-in)
 

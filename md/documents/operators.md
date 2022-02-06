@@ -5,6 +5,7 @@
 - [Home](../../README.md)
 - [Tutorials](../tutorials.md)
 - [Documents ▾](../documents.md)
+    - [Table of Contents](../documents.md#table-of-contents)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
         - [Comments](./comments.md)
@@ -12,6 +13,7 @@
         - [Configurations](./configurations.md)
         - [Data Types](./dataTypes.md)
         - **Operators ▾**
+            - [Table of Contents](#table-of-contents)
             - [Catalog](#catalog)
             - [About](#about)
             - [Documentation](#documentation)
@@ -20,13 +22,16 @@
         - [Variables](./variables.md)
 - [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
+- [Full Table of Contents](../fullTableOfContents.md)
 
 ## Catalog
 
 ### A
+
 - [Add](#add)
 
 ### C
+
 - [Call](#call)
 - [Character](#character)
 - [Clear](#clear)
@@ -34,18 +39,22 @@
 - [Constant](#constant)
 
 ### D
+
 - [Decrement](#decrement)
 - [Divide](#divide)
 
 ### E
+
 - [End](#end)
 - [Evaluate](#evaluate)
 - [Exit](#exit)
 
 ### F
+
 - [Float](#float)
 
 ### I
+
 - [Import](#import)
 - [Index](#index)
 - [Increment](#increment)
@@ -53,28 +62,35 @@
 - [Is Any Number](#is-any-number)
 
 ### J
+
 - [Jump](#jump)
 
 ### L
+
 - [Length](#length)
 - [Load](#load)
 - [Lowercase](#lowercase)
 
 ### M
+
 - [Multiply](#multiply)
 
 ### N
+
 - [Number](#number)
 
 ### O
+
 - [Output](#output)
 
 ### P
+
 - [Pop](#pop)
 - [Provoke](#provoke)
 - [Push](#push)
 
 ### R
+
 - [Random Number Generator](#random-number-generator)
 - [Read](#read)
 - [Remove](#remove)
@@ -83,6 +99,7 @@
 - [Round](#round)
 
 ### S
+
 - [Save](#save)
 - [Skip](#skip)
 - [Slice](#slice)
@@ -90,13 +107,16 @@
 - [Subtract](#subtract)
 
 ### T
+
 - [Throw](#throw)
 - [Try](#try)
 
 ### U
+
 - [Uppercase](#uppercase)
 
 ### W
+
 - [Wait](#wait)
 - [While](#while)
 
@@ -1175,7 +1195,6 @@ out "Hello, world!"
 ---
 
 ### While
-
 
 ```xt
 whl <expression> <statement>
