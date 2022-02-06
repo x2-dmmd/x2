@@ -126,7 +126,7 @@ Operators are keywords that process arguments.
 
 A statement is a line of code that tells the interpreter what to do. They are always made up of two components: the `operator` and the `arguments`, and they are arranged like so:
 
-```
+```xt
 <operator> [...arguments]
 ```
 
@@ -146,7 +146,7 @@ A statement can also be wrapped around parentheses (`()`) to group them.
 
 Some statements return values, which can be stored in a variable:
 
-```
+```xt
 psh (add 1 2) sum
 ```
 
@@ -754,18 +754,16 @@ out "Hello, world!"
 
 ### Pop
 
-> Unstable: `Pop` operator currently returns the same value. Use the variable directly instead.
-
 ```xt
-pop <string> [output]
+pop <variable> [output]
 ```
 
-Parses the stringified variable and returns its value.
+Parses the variable and returns its value.
 
 | Parameter | Type | Optional | Description |
 | :-: | :-: | :-: | :-: |
-| String | [String](./dataTypes.md#string) | | The stringified variable |
-| Output | [Variable](./variables.md) | ✓ | The value of the stringified variable |
+| Variable | Any | | The target variable |
+| Output | [Variable](./variables.md) | ✓ | The value of the parsed variable |
 
 Returns: Any
 
@@ -1037,7 +1035,7 @@ Returns: [String](./dataTypes.md#string)
 
 Example:
 
-```
+```xt
 slc 0 5 "Hello, world!" output
 out output
 ```

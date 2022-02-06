@@ -26,7 +26,7 @@
 
 Packages are x2 files written by other people that can be imported to your x2 project using the `imp` operator:
 
-```
+```xt
 imp "examplePackage"
 ```
 
@@ -36,7 +36,7 @@ Imported packages are only available in that one specific file. When attempting 
 
 You can use an imported package by referencing the package name and then followed by a dot and the section name like so:
 
-```
+```xt
 imp "examplePackage"
 
 examplePackage.mySection

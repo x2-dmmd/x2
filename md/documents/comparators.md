@@ -60,7 +60,7 @@ Comparators are symbols or keywords that compare two different variables or valu
 
 Expressions are segments in the code that creates a branch in the x2 thread. They are always made up of three components: the `source`, the `comparator`, and the `target`, and they are arranged like so:
 
-```
+```xt
 <source> <comparator> <target>
 ```
 

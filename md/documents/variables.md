@@ -68,7 +68,7 @@ rem 5 #myInteger
 
 A variable can also be constant, which means it cannot be deleted using the `rem` operator. A constant variable can be defined using the `cnst` operator:
 
-```
+```xt
 cnst 5 myInteger
 ```
 

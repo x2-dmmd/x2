@@ -7,7 +7,7 @@
     - [Table of Contents](#table-of-contents)
     - [About](#about)
     - [Tutorials ▾](#tutorials)
-        - [1. Hello, world!](./tutorials/helloWorld.md)
+        - [1. Hello, world!](./tutorials/1helloWorld.md)
 - [Documents](./documents.md)
 - [Python API](./standardLibrary.md)
 - [Standard Library](./pythonAPI.md)
@@ -21,7 +21,7 @@ If you are looking for information for a specific component of x2, check out the
 
 ## Tutorials
 
-- ### [1. Hello, world!](./tutorials/helloWorld.md)
+- ### [1. Hello, world!](./tutorials/1helloWorld.md)
 
 ---
 
