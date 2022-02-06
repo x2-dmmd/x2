@@ -91,7 +91,7 @@ python main.py .
 Currently, you should see the terminal output:
 
 ```
-"Hello, World!"
+"Hello, world!"
 ```
 
 ## Frequently Asked Questions
@@ -123,6 +123,6 @@ You can publish your games and packages at [our website](https://x2.iipython.cf/
 
 ---
 
-Last Updated: February 5th, 2022 by Dm123321_31mD
+Last Updated: February 6th, 2022 by Dm123321_31mD
 
 [↑ Go To Top](#x2)

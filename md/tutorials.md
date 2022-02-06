@@ -8,6 +8,7 @@
     - [About](#about)
     - [Tutorials ▾](#tutorials)
         - [1. Hello, world!](./tutorials/1helloWorld.md)
+        - [2. User Input](./tutorials/2userInput.md)
 - [Documents](./documents.md)
 - [Python API](./standardLibrary.md)
 - [Standard Library](./pythonAPI.md)
@@ -22,9 +23,10 @@ If you are looking for information for a specific component of x2, check out the
 ## Tutorials
 
 - ### [1. Hello, world!](./tutorials/1helloWorld.md)
+- ### [2. User Input](./tutorials/2userInput.md)
 
 ---
 
-Last Updated: February 5th, 2022 by Dm123321_31mD
+Last Updated: February 6th, 2022 by Dm123321_31mD
 
 [↑ Go To Top](#x2--tutorials)

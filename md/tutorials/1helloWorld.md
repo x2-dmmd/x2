@@ -10,6 +10,7 @@
         - **1. Hello, world! ▾**
             - [Table of Contents](#table-of-contents)
             - [Lesson](#lesson)
+        - [2. User Input](./2userInput.md)
 - [Documents](./documents.md)
 - [Python API](./standardLibrary.md)
 - [Standard Library](./pythonAPI.md)
@@ -82,7 +83,7 @@ Let's try it!
 :main
     psh "Bob" name
     psh 20 age
-    out "My name is $(pop name) and I am $(age) years old"
+    out "My name is $(pop name) and I am $(pop age) years old"
 ```
 
 You did it! You made your first ever x2 project.
@@ -93,4 +94,4 @@ In the next lesson, you will learn how to get user inputs and how to manupulate 
 
 Last Updated: February 6th, 2022 by Dm123321_31mD
 
-[↑ Go To Top](#x2--documents--operators)
+[↑ Go To Top](#x2--tutorials--1-hello-world)
