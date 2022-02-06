@@ -1,7 +1,8 @@
 :: @ Standard Libary v1.0.0 (x2.3b0 - x2.3b0) - DmmD
 
 :: ! Scripts
-evl "from pkg.stdlib.script import init; init(x2)"
+evl "import sys; import os; sys.path.append(os.getcwd())"
+evl "from pkg.stdlib import script; x2.memory.stdlib = script; script.init(x2)"
 
 :: ! Methods
 :class value
@@ -17,27 +18,27 @@ evl "from pkg.stdlib.script import init; init(x2)"
     ret result
 
 :constant key value
-    evl "from pkg.stdlib.script import setConstant; setConstant(getvar('key').value, getvar('value').value)"
+    evl "x2.memory.stdlib.setConstant(getvar('key').value, getvar('value').value)"
     ret value
 
 :delete key
-    evl "from pkg.stdlib.script import deleteVariable; setvar('result', deleteVariable(getvar('key').value))"
+    evl "x2.memory.stdlib.setvar('result', deleteVariable(getvar('key').value))"
     ret result
 
 :fetch key
-    evl "from pkg.stdlib.script import fetchVariable; setvar('result', fetchVariable(getvar('key').value))"
+    evl "x2.memory.stdlib.setvar('result', fetchVariable(getvar('key').value))"
     ret result
 
 :get key
-    evl "from pkg.stdlib.script import getVariable; setvar('result', getVariable(getvar('key').value))"
+    evl "x2.memory.stdlib.setvar('result', getVariable(getvar('key').value))"
     ret result
 
 :has key
-    evl "from pkg.stdlib.script import hasVariable; setvar('result', hasVariable(getvar('key').value))"
+    evl "x2.memory.stdlib.setvar('result', hasVariable(getvar('key').value))"
     ret result
     
 :isConstant key
-    evl "from pkg.stdlib.script import isConstant; setvar('result', isConstant(getvar('key').value))"
+    evl "x2.memory.stdlib.setvar('result', isConstant(getvar('key').value))"
     ret result
 
 :jsonDecode string
@@ -49,7 +50,7 @@ evl "from pkg.stdlib.script import init; init(x2)"
     ret result
 
 :set key value
-    evl "from pkg.stdlib.script import setVariable; setVariable(getvar('key').value, getvar('value').value)"
+    evl "x2.memory.stdlib.setVariable(getvar('key').value, getvar('value').value)"
     ret value
 
 :type value

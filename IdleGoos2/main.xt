@@ -1,0 +1,22 @@
+:: @ Idle Goos 2
+:: @ Version 1.0.0 (x2.3b0)
+:: @ Made by DmmD
+
+:: NOTE: Up = 72
+:: NOTE: Left = 75
+:: NOTE: Right = 77
+:: NOTE: Down = 80
+
+:: ! Imports
+imp "stdlib"
+imp "stdlib/color"
+
+:: ! Entry
+:main
+    cls
+    out "5" ..
+        5
+    :: out (pvk color.byellowf "Welcome to Idle Goos 2!") ..
+    ::     (pvk color.bblackf "\t- By DmmD") ..
+    ::     "" ..
+    ::     (pvk color.bblackf "v1.0.0 | x2.3b0")

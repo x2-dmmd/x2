@@ -173,6 +173,18 @@ A string is a combination of characters, numbers, spaces, and other symbols wrap
 "My favorite number is 5."
 ```
 
+A string can also be concatenated using a backslash (`\`) or moved to the next line using two dots (`..`):
+
+```xt
+out "Hello, " \
+    "world!"
+```
+
+```xt
+out "Hello, " ..
+    "world!"
+```
+
 Some sets of characters, called escape codes or escape sequences, have special meanings within a string, and they always start with a backslash (`\`):
 
 ```xt

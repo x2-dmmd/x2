@@ -1,12 +1,12 @@
 # Copyright 2022 iiPython
-# x2.3b0 Codename Goos
+# x2.3b1 Codename Goos
 
 # Modules
 import os
 import sys
+import time
 import json
 import string
-import time
 from typing import Any, Tuple
 
 from x2 import (
@@ -16,14 +16,25 @@ from x2 import (
 )
 
 # Initialization
-__version__ = "x2.3b0 (Modified)"
+__version__ = "x2.3b1"
 
 sys.argv = sys.argv[1:]
 xt_folder = os.path.join(os.path.dirname(__file__), "x2")
 
-if "-h" in sys.argv or "--help" in sys.argv:
-    print("usage: x2 [-h] [file]\nflags:\n    -h  shows this message and exits\n\nif path is '.', tries to load entrypoint from .xtconfig")
+def check_argv(matches: list) -> bool:
+    return bool([m for m in matches if m in sys.argv])
+
+if check_argv(["-h", "--help"]):
+    print("usage: x2 [-hv] [--help/version] [file]")
+    print("-h (--help)       shows this message and exits")
+    print("-v (--version)    prints the x2 version and exits")
+    print()
+    print("If file is not provided, it is loaded from .xtconfig")
+    print("Copyright (c) 2022 iiPython + Dm123321_31mD")
     sys.exit(0)
+
+elif check_argv(["-v", "--version"]):
+    sys.exit(__version__)
 
 # Load x2 configuration
 config = {}
@@ -47,8 +58,8 @@ class XTInterpreter(object):
 
         # Data attributes
         self._config = config
+        self._uptime = time.time()
         self._version = __version__
-        self._uptime_st = time.time()
 
     def setvar(self, name: str, value: Any, **kwargs) -> Any:
         return XTDatastore(self.memory, name, **kwargs).set(value)
