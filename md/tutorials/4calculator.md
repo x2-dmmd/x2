@@ -124,7 +124,7 @@ Since you defined `c` as the answer to the equation, you can simply output it to
     cmp o == "S" "sub a b c"
     cmp o == "M" "mul a b c"
     cmp o == "D" "div a b c"
-    out "The answer to that equation is $(c)"
+    out "The answer to that equation is $(pop c)"
 ```
 
 Tada! You got a working calculator. How cool is that!

@@ -37,7 +37,7 @@ A variable can then be referenced using the variable name:
 out myInteger
 ```
 
-By default, a variable is scoped, or local, which means it can only be referenced within the section it was defined in. Once the section is ended, the variables are garbaged collected to save memory.
+By default, a variable is scoped, or local, which means it can only be referenced within the section it was defined in. Once the section is ended, the variables are garbage collected to save memory.
 
 There are two other types of variables, `file variable` and `global variable`. A file variable can be referenced by any sections within the same file, while a global variable can be referenced anywhere in the project.
 
