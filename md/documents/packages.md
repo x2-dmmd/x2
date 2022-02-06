@@ -39,7 +39,7 @@ imp "examplePackage"
 examplePackage.mySection
 ```
 
-The same applies for importing files.
+The same applies to importing files.
 
 To import a file from the x2 project, the path must contain the `.xt` extension. The interpreter will then attempt to find the file from the current working directory. If one is not found, an error is thrown.
 

@@ -45,7 +45,7 @@ A file variable is defined by appending an at symbol (`@`) in front of the varia
 psh 5 @myInteger
 ```
 
-A global variable is defined by apending a hashtag (`#`) in front of the variable name:
+A global variable is defined by appending a hashtag (`#`) in front of the variable name:
 
 ```xt
 psh 5 #myInteger
@@ -69,7 +69,7 @@ A variable can also be constant, which means it cannot be deleted using the `rem
 cnst 5 myInteger
 ```
 
-Attemping to delete the variable will cause an error to be thrown. Note that even though a constant cannot be removed manually, it is still garbage collected if it is a local variable.
+Attempting to delete the variable will cause an error to be thrown. Note that even though a constant cannot be removed manually, it is still garbage collected if it is a local variable.
 
 ---
 

@@ -122,7 +122,7 @@ Or:
 add 1 2 sum
 ```
 
-A statement can also be wrapped around parentheses (`()`) to group them together.
+A statement can also be wrapped around parentheses (`()`) to group them.
 
 Some statements return values, which can be stored in a variable:
 
@@ -734,7 +734,7 @@ out "Hello, world!"
 
 ### Pop
 
-> Unstable: `Pop` operator currently returns the same value back. Use the variable directly instead.
+> Unstable: `Pop` operator currently returns the same value. Use the variable directly instead.
 
 ```xt
 pop <string> [output]

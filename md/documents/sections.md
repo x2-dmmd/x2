@@ -21,7 +21,7 @@
 
 ## About
 
-A section is a set of statements that gets executed when using the operators `call`, `jmp`, or `pvk`. They are always loaded first when the file is executed or imported.
+A section is a set of statements that get executed when using the operators `call`, `jmp`, or `pvk`. They are always loaded first when the file is executed or imported.
 
 Sections always start with a colon `:`, and their name can only contain alphabetical letters:
 
@@ -35,7 +35,7 @@ By default, a section is public, which means other files can import and use the 
 :@mySection
 ```
 
-Statements that are not within a section are located in the global section predefined by the interpreter. The global section cannot be referenced, interacted, or called, as it is deleted as soon as the file is executed or imported.
+Statements that are not within a section are located in the global section predefined by the interpreter. The global section cannot be referenced, interacted with, or called, as it is deleted as soon as the file is executed or imported.
 
 A section can also take arguments. Any variables separated by space and placed directly after the section name are considered arguments:
 
@@ -45,7 +45,7 @@ A section can also take arguments. Any variables separated by space and placed d
 
 > All arguments of a method or a function must be passed. An error is thrown if an argument is missing.
 
-There are three types of sections that exist in x2.
+Three types of sections exist in x2.
 
 A section that does not take any additional arguments nor return a value is considered a `section` and generally invoked using the `jmp` operator:
 
