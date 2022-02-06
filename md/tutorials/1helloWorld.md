@@ -14,7 +14,6 @@
 - [Documents](./documents.md)
 - [Python API](./standardLibrary.md)
 - [Standard Library](./pythonAPI.md)
-- [Full Table of Contents](./fullTableOfContents.md)
 
 ## Lesson
 

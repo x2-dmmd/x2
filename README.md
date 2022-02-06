@@ -22,7 +22,6 @@ Welcome to the official documentation of x2! This documentation will get you sta
 - [Documents](./md/documents.md)
 - [Python API](./md/pythonAPI.md)
 - [Standard Library](./md/standardLibrary.md)
-- [Full Table of Contents](./md/fullTableOfContents.md)
 
 ## About
 

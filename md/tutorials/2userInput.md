@@ -14,7 +14,6 @@
 - [Documents](./documents.md)
 - [Python API](./standardLibrary.md)
 - [Standard Library](./pythonAPI.md)
-- [Full Table of Contents](./fullTableOfContents.md)
 
 ## Lesson
 
@@ -30,7 +29,7 @@ So far, you should've gotten this in your `main.xt` file:
     out "My name is $(pop name) and I am $(pop age) years old"
 ```
 
-What if you want to ask what the user's name is instead of yours? We can use the `read` operator to get a user input from the terminal. The `read` operator takes in two arguments, the `prompt` and the `output`. The prompt is what the user will see when you get a user input. You can think of it like asking a question. The output is the answer from the user input.
+What if you want to ask what the user's name is instead of yours? We can use the `read` operator to get a user input from the terminal. The `read` operator takes in two arguments, the `prompt` and the `output`. The prompt is what the user will see when you get a user input. You can think of it as asking a question. The output is the answer from the user input.
 
 Let's see it:
 
@@ -74,7 +73,7 @@ sub 5 10 output
 out output :: Outputs: -5
 ```
 
-However, because the user input always gives us a string, we need a way to convert it into a number. We can also use the `num` operator for this:
+However, because the user input always gives us a string, we need a way to convert it into a number. We can use the `num` operator for this:
 
 ```xt
 psh "5" myInteger
@@ -94,6 +93,10 @@ Let's give it a shot:
     sub 2022 age birthYear
     out "Your name is $(pop name) and you were born in $(pop birthYear)"
 ```
+
+Now it will ask the user their name and age and output their name and birth year. Incredible isn't it.
+
+In the next lesson, you will learn how to make branches using the `cmp` operator.
 
 ---
 

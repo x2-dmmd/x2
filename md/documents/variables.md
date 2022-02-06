@@ -20,7 +20,6 @@
             - [About](#about)
 - [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
-- [Full Table of Contents](../fullTableOfContents.md)
 
 ## About
 
