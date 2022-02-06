@@ -76,7 +76,7 @@ Currently, it is impossible to get a boolean value within vanilla x2. Because of
 
 ### Float
 
-A flat is a signed number value with decimal points:
+A float is a signed number value with decimal points:
 
 ```xt
 5.0
@@ -192,7 +192,7 @@ Below is a list of all the escape codes for reference:
 | `\v` | Verticle Tab | `out "Hello,\vworld!"` | `Hello,`<br>`world!` | |
 | `\ooo` | Octal Value | `out "\110\145\154\154\157\54\40\167\157\162\154\144\41"` | `Hello, world!` | ✓ |
 | `\xhh` | Hex Value | `out "\x48\x65\x6C\x6C\x6F\x2C\x20\x77\x6F\x72\x6C\x64\x21"` | `Hello, world!` | ✓ |
-| `\N{name}` | [Unicode Name](https://unicode.org/) | `out "Hello,\N{grinning face}"` | `Hello,😀world!` | ✓ |
+| `\N{name}` | [Unicode Name](https://unicode.org/) | `out "Hello,\N{grinning face}world!"` | `Hello,😀world!` | ✓ |
 | `\uhhhh` | [16-Bit Unicode Escape](https://home.unicode.org/) | `out "\u0048\u0065\u006c\u006c\u006f\u002c\u0020\u0077\u006f\u0072\u006c\u0064\u0021"` | `Hello, world!` | ✓ |
 | `\Uhhhhhhhh` | [32-Bit Unicode Escape](https://unicode.org/) | `out "Hello,\U0001F600world!"` | `Hello,😀world!` | ✓ |
 | `\033[` | [ANSI Escape](https://en.wikipedia.org/wiki/ANSI_escape_code) | `out "\033[31mHello, world!\033[0m"` | `Hello, world!` in red | ✓ |
