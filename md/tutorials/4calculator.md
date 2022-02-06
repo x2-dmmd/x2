@@ -19,7 +19,7 @@
 
 ## Lesson
 
-From the last three lessons, you learned how to print values into the terminal, get user inputs, modify strings and numbers, and create branches. In this lesson, you will be using all of these knowledge to construct a calculator using x2. Even though it may seem difficult at first, it is really just made up of simple components. Let's break it down.
+From the last three lessons, you learned how to print values into the terminal, get user inputs, modify strings and numbers, and create branches. In this lesson, you will be using all of this knowledge to construct a calculator using x2. Even though it may seem difficult at first, it is just made up of simple components. Let's break it down.
 
 Let's introduce the program and get some inputs from the user using the `out` and `read` operators:
 
@@ -52,7 +52,7 @@ You can also use escape codes to format your texts, such as `\t` to indent your 
     out "-----"
 ```
 
-Currently, the numbers you got from the user is a string. You need to parse it into a number using the `num` operator so you can use mathematical operators on it. You can also uppercase your operator using the `upr` operator so you can allow both lowercase and uppercase answers:
+Currently, the numbers you got from the user are a string. You need to parse it into a number using the `num` operator so you can use mathematical operators on it. You can also uppercase your operator using the `upr` operator so you can allow both lowercase and uppercase answers:
 
 ```xt
 :: Main
@@ -100,7 +100,7 @@ Now we can use the `cmp` operator to check what operator the user selected and a
     cmp o == "D" "div a b c"
 ```
 
-Since you defined `c` as the answer of the equation, you can simply output it to the terminal. Using string interpolation and the `pop` operator, your can also use variables within your strings:
+Since you defined `c` as the answer to the equation, you can simply output it to the terminal. Using string interpolation and the `pop` operator, you can also use variables within your strings:
 
 ```xt
 :: Main
