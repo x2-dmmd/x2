@@ -13,9 +13,10 @@
         - [Data Types](./documents/dataTypes.md)
         - [Operators](./documents/operators.md)
         - [Packages](./documents/packages.md)
-        - [Python API](./documents/pythonAPI.md)
         - [Sections](./documents/sections.md)
         - [Variables](./documents/variables.md)
+- [Standard Library](../standardLibrary.md)
+- [Standard Library](../pythonAPI.md)
 
 ## About
 
@@ -30,7 +31,6 @@ If you are looking for a beginner's guide for x2, check out the [tutorials](./tu
 - ### [Data Types](./documents/dataTypes.md)
 - ### [Operators](./documents/operators.md)
 - ### [Packages](./documents/packages.md)
-- ### [Python API](./documents/pythonAPI.md)
 - ### [Sections](./documents/sections.md)
 - ### [Variables](./documents/variables.md)
 

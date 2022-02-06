@@ -16,6 +16,7 @@ Welcome to the official documentation of x2! This documentation will get you sta
     - [Credits and Links](#credits--links)
 - [Tutorials](./md/tutorials.md)
 - [Documents](./md/documents.md)
+- [Python API](./md/pythonAPI.md)
 - [Standard Library](./md/standardLibrary.md)
 
 ## About

@@ -1,4 +1,4 @@
-# [x2](../../README.md) / [Documents](../documents.md) / Comments
+# [x2](../../README.md) / [Documents](../documents.md) / Sections
 
 ## Table of Contents
 
@@ -7,32 +7,24 @@
 - [Documents ▾](../documents.md)
     - [About](../documents.md#about)
     - [Documents ▾](../documents.md#documents)
-        - **Comments ▾**
-            - [About](#about)
+        - [Comments](./comments.md)
         - [Comparators](./comparators.md)
         - [Configurations](./configurations.md)
         - [Data Types](./dataTypes.md)
         - [Operators](./operators.md)
         - [Packages](./packages.md)
-        - [Python API](./pythonAPI.md)
-        - [Sections](./sections.md)
+        - **Sections ▾**
+            - [About](#about)
         - [Variables](./variables.md)
 - [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
 
 ## About
 
-Comments are a segment of code that is ignored by the interpreter. They provide reference information to you and the developers.
-
-A comment always starts with two colons `::` and can be placed at the end of any line:
-
-```xt
-:: This is a comment
-out 5 :: This is a comment
-```
+A section is a set of statements that gets executed when using the `call`, `jmp`, `
 
 ---
 
 Last Updated: February 5th, 2022 by Dm123321_31mD
 
-[↑ Go To Top](#x2--documents--comments)
+[↑ Go To Top](#x2--documents--sections)

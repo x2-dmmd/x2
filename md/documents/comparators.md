@@ -16,9 +16,9 @@
         - [Data Types](./dataTypes.md)
         - [Operators](./operators.md)
         - [Packages](./packages.md)
-        - [Python API](./pythonAPI.md)
         - [Sections](./sections.md)
         - [Variables](./variables.md)
+- [Python API](../pythonAPI.md)
 - [Standard Library](../standardLibrary.md)
 
 ## Catalog
