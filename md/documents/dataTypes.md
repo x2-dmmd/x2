@@ -72,6 +72,8 @@ A boolean value represents either `true` or `false`.
 
 Currently, it is impossible to get a boolean value within vanilla x2. Because of that, integers are used instead to represent a true or false value, where `1` represents `true` and `0` represents `false`.
 
+---
+
 ### Float
 
 A flat is a signed number value with decimal points:
