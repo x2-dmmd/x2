@@ -1,3 +1,9 @@
 :: Main
 :main
-    out "\033[31mHello, world!\033[0m"
+    pvk test 1
+
+    pvk test 2
+
+:test a
+    cnst a myVariable
+    out myVariable

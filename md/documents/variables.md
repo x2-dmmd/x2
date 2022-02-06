@@ -21,6 +21,56 @@
 
 ## About
 
+A variable is a label that stores a value that can be referenced and modified at any time.
+
+Even though a variable can contain any character besides spaces, it is recommended to use only alphabetical letters. A variable is defined using the `psh` operator:
+
+```xt
+psh 5 myInteger
+```
+
+A variable can then be referenced using the variable name:
+
+```xt
+out myInteger
+```
+
+By default, a variable is scoped, or local, which means it can only be referenced within the section it was defined in. Once the section is ended, the variables are garbaged collected to save memory.
+
+There are two other types of variables, `file variable` and `global variable`. A file variable can be referenced by any sections within the same file, while a global variable can be referenced anywhere in the project.
+
+A file variable is defined by appending an at symbol (`@`) in front of the variable name:
+
+```xt
+psh 5 @myInteger
+```
+
+A global variable is defined by apending a hashtag (`#`) in front of the variable name:
+
+```xt
+psh 5 #myInteger
+```
+
+Both file and global are not garbage collected and must be manually deleted from the memory using the `rem` operator:
+
+```xt
+rem 5 @myInteger
+```
+
+Or:
+
+```xt
+rem 5 #myInteger
+```
+
+A variable can also be constant, which means it cannot be deleted using the `rem` operator. A constant variable can be defined using the `cnst` operator:
+
+```
+cnst 5 myInteger
+```
+
+Attemping to delete the variable will cause an error to be thrown. Note that even though a constant cannot be removed manually, it is still garbage collected if it is a local variable.
+
 ---
 
 Last Updated: February 5th, 2022 by Dm123321_31mD
