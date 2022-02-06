@@ -1,8 +1,3 @@
 :: Main
 :main
-    read "What is your name? " name
-    upr name
-    read "What is your age? " age
-    num age
-    sub 2022 age birthYear
-    out "Your name is $(pop name) and you were born in $(pop birthYear)"
+    out "Hello, world!"

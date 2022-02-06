@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Home](../README.md)
-- **Tutorials ▾**
+- [Home](../../README.md)
+- [Tutorials](../tutorials.md)
     - [Table of Contents](#table-of-contents)
     - [About](#about)
     - [Tutorials ▾](#tutorials)
@@ -11,9 +11,11 @@
             - [Table of Contents](#table-of-contents)
             - [Lesson](#lesson)
         - [2. User Input](./2userInput.md)
-- [Documents](./documents.md)
-- [Python API](./standardLibrary.md)
-- [Standard Library](./pythonAPI.md)
+        - [3. Branches](./3branches.md)
+        - [4. Calculator](./4calculator.md)
+- [Documents](../documents.md)
+- [Python API](../standardLibrary.md)
+- [Standard Library](../pythonAPI.md)
 
 ## Lesson
 
@@ -49,13 +51,13 @@ Did you get something similar to this:
     out "My name is Bob and I am 20 years old"
 ```
 
-You can also store the name and the age in separate variables so you can reference it later. The `psh` operator takes in two arguments, the `value` and the `variable`. To define a value, we can use the following:
+You can also store the name and the age in separate variables so you can reference it later. The `psh` operator takes in two arguments, the `value` and the `variable`. To define a value, you can use the following:
 
 ```xt
 psh 5 myInteger
 ```
 
-Let's put that in our code!
+Let's put that in your code!
 
 ```xt
 :: Main
@@ -65,9 +67,9 @@ Let's put that in our code!
     out "My name is Bob and I am 20 years old"
 ```
 
-We can put our variables into our string using `string interpolation`. String interpolation is the process of inserting another statement within a string. This is usually done so by wrapping them in `$()`.
+Your can put your variables into your string using `string interpolation`. String interpolation is the process of inserting another statement within a string. This is usually done so by wrapping them in `$()`.
 
-But here is the problem, we cannot reference the variable directly in a string interpolation. Our variable is not a statement and thus cannot be used on its own. We can fix this problem using the `pop` operator.
+But here is the problem, you cannot reference the variable directly in a string interpolation. Your variable is not a statement and thus cannot be used on its own. You can fix this problem using the `pop` operator.
 
 The pop operator parses a variable and returns its value like so:
 
